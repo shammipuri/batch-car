@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="bootstrap3-ex.css" rel="stylesheet" media="screen">
+  </head>
+  <body> 
+        <div class="container">
+         <div class="row">
+          <div class="col-12">
+            <h1 class="text-center ">Batch Car</h1>
+          </div>
+        </div>
+        <ul class="row nav navbar-nav">
+          <li class="active col-4"><a href="#">RADIO TAXI</a></li>
+          <li class="col-4"><a href="#about">HOURLY</a></li>
+          <li class="col-4"><a href="#contact">OUTSTATION</a></li>
+        </ul>
+      </div>
+ <!-- /Header container -->
+    
+    <div class="container">
+      <form class="city_taxi form-horizontal">
+        <div class="row mobile-control">
+          <input class="input-xlarge col-12" type="text" value="" name="mobile" placeholder="MOBILE">
+        </div>
+        <div id="gmap-from-container" class="control-group10 row">
+          <input id="gmap-from" class="input-xlarge col-12" type="text" name="from_place" placeholder="FROM" autocomplete="off">
+        </div>
+        <div class="control-group10 row">
+          <input id="gmap-to" class="input-xlarge col-12" type="text" name="to_place" placeholder="TO" autocomplete="off">
+        </div>
+        <div class="control-group10 datepicker-container row">
+          <div class="input-outer col-6">
+            <div id="datetimepicker" class="input-append date col-10">
+              <input type="text" name="datetime" placeholder="TIME" readonly="" value="" size="16">
+              <span class="add-on">
+              </span>
+            </div>
+          </div>
+          <div class="input-outer col-6">
+            <select id="cab-provider" class="span12" name="carprovider">
+              <option value="all">Any cab</option>
+              <option value="meru">Meru cabs</option>
+              <option value="easy_cabs">Easy cabs</option>
+              <option value="ola">Ola cabs</option>
+              <option value="tab_cab">Tab cabs</option>
+              <option value="ytaxi">Cool Cabs</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div> 
+</body>
+</html>
